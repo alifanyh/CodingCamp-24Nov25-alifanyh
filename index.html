@@ -10,13 +10,60 @@
   </head>
   <body>
     <!-- Header Section -->
-    <header></header>
+    <header>
+      <h1>My Todo List</h1>
+    </header>
 
     <!-- Main Section -->
-    <main></main>
+    <main>
+      <!-- Form Section -->
+      <section>
+        <form>
+          <!-- Todo Input -->
+          <input
+            type="text"
+            id="todo-input"
+            placeholder="Enter a new todo item"
+          />
+
+          <!-- Date Input -->
+          <input type="date" id="todo-date" placeholder="Enter due date" />
+        </form>
+
+        <!-- Add Button -->
+        <button type="button">Add Todo</button>
+      </section>
+
+      <!-- Section Action -->
+      <section class="flex pt-2 justify-between">
+        <!-- Clear All Button -->
+        <button class="border rounded p-2 bg-red-500 text-white">
+          Clear All Todos
+        </button>
+
+        <!-- Filter Options -->
+        <button class="border rounded p-2 bg-blue-500 text-white">
+          Filter Todos
+        </button>
+      </section>
+
+      <!-- Todo List Section -->
+      <section class="pt-2">
+        <header>
+          <h1 class="text-2xl font-semibold">List of Todos</h1>
+        </header>
+
+        <ul class="pt-2" id="todo-list">
+          <!-- Todo items will be dynamically added here -->
+          <li>No todos available</li>
+        </ul>
+      </section>
+    </main>
 
     <!-- Footer Section -->
-    <footer></footer>
+    <footer>
+      <p>&copy; 2025 Alifa N I. All rights reserved.</p>
+    </footer>
 
     <!-- JavaScript External -->
     <script src="js/script.js"></script>
